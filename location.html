@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!--basic head-->
+  <head>
+    <title>Store locator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gentry Rolofson">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/1.1.1/angularfire.min.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+  </head>
+  <body ng-controller="gentrysController">
+    <div id="wrapper">
+      <div class="data-content-center">
+        <section id="searchBox">
+          <section id="searchForm">
+            <form >
+              <label class="fieldLabel" for="zipcode">Zip Code</label>
+              <input id="fieldZip" type="text" name="storeLocationzip" value="" class="searchStorezip">
+              <label class="fieldLabel" for="city">City</label>
+              <input id="fieldCity" type="text" name="storeLocationcity" value="" class="searchStorezip">
+              <label class="fieldLabel" for="state">State</label>
+              <select id="fieldState" role="combobox" class="state form-control" aria-describedby="stateStatus"><option value="">Select a state…</option><option value="AK">AK – Alaska</option><option value="AL">AL – Alabama</option><option value="AR">AR – Arkansas</option><option value="AZ">AZ – Arizona</option><option value="CA">CA – California</option><option value="CO">CO – Colorado</option><option value="CT">CT – Connecticut</option><option value="DC">DC – District of Columbia</option><option value="DE">DE – Delaware</option><option value="FL">FL – Florida</option><option value="GA">GA – Georgia</option><option value="HI">HI – Hawaii</option><option value="IA">IA – Iowa</option><option value="ID">ID – Idaho</option><option value="IL">IL – Illinois</option><option value="IN">IN – Indiana</option><option value="KS">KS – Kansas</option><option value="KY">KY – Kentucky</option><option value="LA">LA – Louisiana</option><option value="MA">MA – Massachusetts</option><option value="MD">MD – Maryland</option><option value="ME">ME – Maine</option><option value="MI">MI – Michigan</option><option value="MN">MN – Minnesota</option><option value="MO">MO – Missouri</option><option value="MS">MS – Mississippi</option><option value="MT">MT – Montana</option><option value="NC">NC – North Carolina</option><option value="ND">ND – North Dakota</option><option value="NE">NE – Nebraska</option><option value="NH">NH – New Hampshire</option><option value="NJ">NJ – New Jersey</option><option value="NM">NM – New Mexico</option><option value="NV">NV – Nevada</option><option value="NY">NY – New York</option><option value="OH">OH – Ohio</option><option value="OK">OK – Oklahoma</option><option value="OR">OR – Oregon</option><option value="PA">PA – Pennsylvania</option><option value="RI">RI – Rhode Island</option><option value="SC">SC – South Carolina</option><option value="SD">SD – South Dakota</option><option value="TN">TN – Tennessee</option><option value="TX">TX – Texas</option><option value="UT">UT – Utah</option><option value="VA">VA – Virginia</option><option value="VT">VT – Vermont</option><option value="WA">WA – Washington</option><option value="WI">WI – Wisconsin</option><option value="WV">WV – West Virginia</option><option value="WY">WY – Wyoming</option></select>        
+
+
+              <input type="submit" value="Search" class="search-btn" ng-click="clickAction">
+            </form>
+          </section>
+        </section>
+      </div>
+    </div>
+    <script src="App.js"></script>
+  </body>
+</html>
